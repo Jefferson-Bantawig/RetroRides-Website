@@ -93,22 +93,22 @@
                     <div>
                         <label for="cars">Choose a Maker</label>
                         <select name="cars" id="cars">
-                            <option value="ford">Ford</option>
-                            <option value="buick">Buick</option>
-                            <option value="edsel">Edsel</option>
-                            <option value="chevrolet">Chevrolet</option>
+                            <option name="ford" value="ford">Ford</option>
+                            <option name="buick" value="buick">Buick</option>
+                            <option name="edsel" value="edsel">Edsel</option>
+                            <option name="chevrolet" value="chevrolet">Chevrolet</option>
                         </select>   
                     </div>
                     <div>
                         <label for="-pickup-date">Pick up Date</label>
-                        <input id="pickup-date" type="date" >
+                        <input name="pickup-date" id="pickup-date" type="date" >
                     </div>
                     <div>
                         <label for="return-date">Return Date</label>
-                        <input id="return-date" type="date">
+                        <input name="return-date" id="return-date" type="date">
                     </div>
                     <div>
-                        <input type="button" value="Search" >
+                        <button type="submit" class="search-button">Search</button>
                     </div>
                 </form>
             </div>
