@@ -66,26 +66,51 @@
             </div>
             <div id="box-container">
                 <div class="featured-car-box">
-                    <div class="box">
+                    <div class="box 1">
                         <img src="assets/images/chevrolet-corvette.png" alt="Red convertible sports car">
                     </div>
                     <p>1955 Ford Thunderbird</p>
                 </div>
 
                 <div class="featured-car-box">
-                    <div class="box">
+                    <div class="box 2">
                         <img src="assets/images/classic-car-black.png" alt="black classic car">
                     </div>
                     <p>1936 Buick Century</p>
                 </div>
 
                 <div class="featured-car-box">
-                    <div class="box">
+                    <div class="box 3">
                         <img src="assets/images/red-white-classic.png" alt="White classic car with red accents">
                     </div>
                     <p>1958 Edsel Citation</p>
                 </div>
-
+            </div>
+        </section>
+        <section id="search-bar">
+            <div id="search-container">
+                <form id="car-search" action="https://formdump.codeinstitute.net" method="POST">
+                    <div>
+                        <label for="cars">Choose a Maker</label>
+                        <select name="cars" id="cars">
+                            <option value="ford">Ford</option>
+                            <option value="buick">Buick</option>
+                            <option value="edsel">Edsel</option>
+                            <option value="chevrolet">Chevrolet</option>
+                        </select>   
+                    </div>
+                    <div>
+                        <label for="-pickup-date">Pick up Date</label>
+                        <input id="pickup-date" type="date" >
+                    </div>
+                    <div>
+                        <label for="return-date">Return Date</label>
+                        <input id="return-date" type="date">
+                    </div>
+                    <div>
+                        <input type="button" value="Search" >
+                    </div>
+                </form>
             </div>
         </section>
 
