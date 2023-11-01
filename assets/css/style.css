@@ -136,6 +136,12 @@ main {
 }
 
 /* styles the Main Cover texts*/
+
+#main-cover-page {
+    background-color: rgb(37, 36, 36);
+    border-radius: 20px;
+}
+
 #cover-page-text {
     display: flex;
     flex: 1 0 auto;
@@ -145,6 +151,7 @@ main {
     text-align: center;
     color: #dcdcdc;
     padding: 1rem;
+    
 
 }
 
@@ -199,14 +206,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 
 #featured-text {
     text-align: center;
     margin: 2rem;
-    font-size: 1.5rem;
-    color: #FFD700;
+    font-size: 2rem;
+    color: #ddb900;
 
 }
 
@@ -295,6 +303,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .services-box {
@@ -312,6 +321,11 @@ main {
     background-color: #ddb900;
     color: black;
 
+}
+
+#services-text {
+    background-color: rgb(37, 36, 36);
+    border-radius: 10px;
 }
 
 #services-text>h2 {
@@ -530,5 +544,11 @@ footer {
     .services-box {
         width: 300px;
 
+    }
+
+    /* Reviews Styling*/
+
+    .client-reviews {
+        width: 70%;
     }
 }
