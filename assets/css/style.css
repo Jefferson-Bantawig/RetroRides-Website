@@ -131,7 +131,6 @@ main {
     flex: 1 0 auto;
     margin-top: 81px;
     max-width: 100vw;
-    min-height: 500vh;
     background-color: #2d2d2d;
 }
 
@@ -151,7 +150,7 @@ main {
     text-align: center;
     color: #dcdcdc;
     padding: 1rem;
-    
+
 
 }
 
@@ -168,7 +167,7 @@ main {
 
 #car-img img {
     min-width: 100px;
-    max-width: 900px;
+    max-width: 700px;
 
 }
 
@@ -206,15 +205,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 
 }
 
-#featured-text {
+h2 {
     text-align: center;
     margin: 2rem;
     font-size: 2rem;
     color: #ddb900;
+    text-decoration: underline;
 
 }
 
@@ -288,11 +288,78 @@ main {
     border-radius: 5px;
     color: #FFD700;
     transition: 0.15s;
+    font-size: 1rem;
 }
 
 .search-button:hover {
     opacity: 0.8;
 }
+
+/* Our Cars */
+#our-cars-container {
+    margin: 2rem 0;
+}
+#our-cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.car-list {
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    height: 450px;
+    overflow: hidden;
+    color: white;
+    background-color: #6d6d6d;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.car-list>p {
+    font-size: 1.5rem;
+    color: #FFD700;
+    letter-spacing: 1px;
+}
+
+.car-list img {
+    width: 110%;
+    object-fit: cover;
+    align-self: center;
+}
+
+.car-list>.price {
+    color: #FFD700;
+    font-size: 2rem;
+}
+
+.car-list>div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.rent-button {
+    background-color: black;
+    width: 40%;
+    color: #FFD700 ;
+    padding: 1em 2em;
+    border: none;
+    align-self: center;
+    border-radius: 10px;
+}
+
+
+
+
 
 /* Services Section */
 #services {
@@ -303,7 +370,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .services-box {
@@ -384,9 +451,9 @@ footer {
 }
 
 
-/* Media Query for screens 768px and below */
+/* Media Query for screens 767px and below */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     header a {
         order: 2;
         justify-content: flex-end;
@@ -426,7 +493,8 @@ footer {
     }
 
     #menu>li {
-        padding: 1rem 5rem;
+        padding: 0 2rem;
+        text-align: center;
     }
 
     /* Featured Cars Section */
@@ -439,6 +507,21 @@ footer {
     /* Car Search styling */
     #car-search {
         flex-wrap: nowrap
+    }
+
+    /* Our cars */
+    #our-cars {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .car-list {
+        max-width: 250px;
+    }
+
+    .car-list img {
+        width: 100%;
     }
 
     /* Services styles */
@@ -456,7 +539,8 @@ footer {
     }
 
     #services-text {
-        flex: 1
+        flex: 1;
+        margin-right: 4rem;
     }
 
     #services-text>h2 {
@@ -489,7 +573,11 @@ footer {
         flex-direction: column;
         justify-content: space-around;
     }
-    
+
+    #second-review>.review-img {
+        order: 2;
+    }
+
     #second-review img {
         border-radius: 0 10px 10px 0;
     }
@@ -505,7 +593,12 @@ footer {
 
     #car-search select,
     #car-search input {
-        width: 70%;
+        width: 80%;
+        padding: .5em 2em;
+    }
+
+    #menu>li {
+        padding: 0 3rem;
     }
 }
 
