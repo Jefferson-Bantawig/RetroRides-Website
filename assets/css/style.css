@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "roboto", sans-serif;
-    min-width: fit-content;
+    max-width: 100vw;
 }
 
 /* Navigation */
@@ -447,8 +447,47 @@ h2 {
 /* Footer */
 
 footer {
-    background-color: pink;
+    background: url(../images/car\ footer\ image.jpg) top / cover no-repeat;
+    background-position: 0% 33%;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
 }
+#myfooter {
+    margin-top: 0;
+    color: white;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+#myfooter div {
+    margin: 2rem;
+}
+
+#myfooter h3 {
+    color: #FFD700;
+    padding-bottom: 5px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter input {
+    max-width: 165px;
+    margin-top: 10px;
+}
+#newsletter button {
+    padding: 0.5em 1em;
+    margin-top: 5px;
+    max-width: 75px;
+}
+
 
 
 /* Media Query for screens 767px and below */
@@ -476,6 +515,10 @@ footer {
 /* Media Query for screens 768px and above */
 
 @media screen and (min-width: 768px) {
+    header {
+        font-size: 0.7rem;
+    }
+    
     nav {
         display: block;
         box-shadow: none;
@@ -582,11 +625,21 @@ footer {
         border-radius: 0 10px 10px 0;
     }
 
+    /* Footer Section */
+    #myfooter {
+        display: flex;
+        justify-content: space-between;
+    }
+
 }
 
 /* Media Query for screens 1024px and above */
 
 @media screen and (min-width: 1024px) {
+    header {
+        font-size: 1rem;
+    }
+   
     #car-search {
         font-size: 1.5rem;
     }
@@ -599,6 +652,11 @@ footer {
 
     #menu>li {
         padding: 0 3rem;
+    }
+    /*footer style */
+    
+    #myfooter {
+        width: 70%;
     }
 }
 
@@ -644,4 +702,6 @@ footer {
     .client-reviews {
         width: 70%;
     }
+
+    
 }
